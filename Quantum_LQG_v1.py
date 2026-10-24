@@ -23,9 +23,9 @@ import pandas as pd
 
 
 # 1. DEFINISANJE PUTANJE DO BAZE
-# PUTANJA_DO_BAZE = "/Users/4c/Desktop/GHQ/data/loto7_4708_k85.csv"
-# PUTANJA_DO_BAZE = "/Users/4c/Desktop/GHQ/data/loto7_4708_k85_loto_2976.csv"
-PUTANJA_DO_BAZE = "/Users/4c/Desktop/GHQ/data/loto7_4708_k85_loto_plus_1732.csv"
+# PUTANJA_DO_BAZE = "/data/loto7_4708_k85.csv"
+# PUTANJA_DO_BAZE = "/data/loto7_4708_k85_loto_2976.csv"
+PUTANJA_DO_BAZE = "/data/loto7_4708_k85_loto_plus_1732.csv"
 
 
 def generisi_next_predikciju_v1(putanja_csv):
@@ -109,16 +109,16 @@ next_7 = generisi_next_predikciju_v1(PUTANJA_DO_BAZE)
 
 ==================================================
   [LQG v1] SLEDEĆA PREDREČENA KOMBINACIJA (NEXT):
-  [8, 11, 23, 26, 32, 34, 37]
+  [8, x, 23, y, 32, z, 37]
 ==================================================
 
 Detaljan intenzitet izabranih čvorova:
-Čvor 8 -> Intenzitet: 30926148.99
-Čvor 11 -> Intenzitet: 27147798.85
+Čvor  8 -> Intenzitet: 30926148.99
+Čvor  x -> Intenzitet: 27147798.85
 Čvor 23 -> Intenzitet: 30212260.89
-Čvor 26 -> Intenzitet: 27660102.94
+Čvor  y -> Intenzitet: 27660102.94
 Čvor 32 -> Intenzitet: 26966718.94
-Čvor 34 -> Intenzitet: 27881892.60
+Čvor  z -> Intenzitet: 27881892.60
 Čvor 37 -> Intenzitet: 27145526.12
 
 
@@ -132,16 +132,16 @@ Detaljan intenzitet izabranih čvorova:
 
 ==================================================
   [LQG v1] SLEDEĆA PREDREČENA KOMBINACIJA (NEXT):
-  [8, 16, 21, 22, 23, 35, 38]
+  [8, x, 21, y, 23, z, 38]
 ==================================================
 
 Detaljan intenzitet izabranih čvorova:
-Čvor 8 -> Intenzitet: 12700773.75
-Čvor 16 -> Intenzitet: 11182289.22
+Čvor  8 -> Intenzitet: 12700773.75
+Čvor  x -> Intenzitet: 11182289.22
 Čvor 21 -> Intenzitet: 11005724.23
-Čvor 22 -> Intenzitet: 11671293.58
+Čvor  y -> Intenzitet: 11671293.58
 Čvor 23 -> Intenzitet: 11645256.92
-Čvor 35 -> Intenzitet: 10983081.60
+Čvor  z -> Intenzitet: 10983081.60
 Čvor 38 -> Intenzitet: 10976805.97
 
 
@@ -155,16 +155,16 @@ Detaljan intenzitet izabranih čvorova:
 
 ==================================================
   [LQG v1] SLEDEĆA PREDREČENA KOMBINACIJA (NEXT):
-  [2, 7, 8, 11, 23, 26, 34]
+  [2, x, 8, y, 23, z, 34]
 ==================================================
 
 Detaljan intenzitet izabranih čvorova:
-Čvor 2 -> Intenzitet: 4220062.44
-Čvor 7 -> Intenzitet: 3809082.76
-Čvor 8 -> Intenzitet: 3927095.09
-Čvor 11 -> Intenzitet: 4107420.23
+Čvor  2 -> Intenzitet: 4220062.44
+Čvor  x -> Intenzitet: 3809082.76
+Čvor  8 -> Intenzitet: 3927095.09
+Čvor  y -> Intenzitet: 4107420.23
 Čvor 23 -> Intenzitet: 4272994.45
-Čvor 26 -> Intenzitet: 3933596.17
+Čvor  z -> Intenzitet: 3933596.17
 Čvor 34 -> Intenzitet: 3886315.65
 """
 
@@ -222,5 +222,5 @@ Kada se potisne destruktivna interferencija (brojeve sa dna liste), da li se dra
 • Da li su se u predikciji izdvojili brojevi koji su u skorijoj istoriji imali stabilne fazne razmake, ili je model izvukao neočekivane "spavače"?
 
 Skripta je uspešno prošla kroz svih 4707 kola i izbacila prvu čistu geometrijsku predikciju zasnovanu na konstruktivnoj interferenciji talasnih funkcija čvorova. 
-Kombinacija [8, 11, 23, 26, 32, 34, 37] predstavlja tačke u prostoru od 39 čvorova koje u ovom trenutku imaju najveći "geometrijski pritisak" (intenzitete preko 27 do 30 miliona).
+Kombinacija [8, x, 23, y, 32, z, 37] predstavlja tačke u prostoru od 39 čvorova koje u ovom trenutku imaju najveći "geometrijski pritisak" (intenzitete preko 27 do 30 miliona).
 """
